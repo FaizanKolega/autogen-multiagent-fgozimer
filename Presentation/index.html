@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kolega - Register</title>
+    <style>
+        body {
+            background: url('https://source.unsplash.com/random/1920x1080');
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: sans-serif;
+            color: #fff;
+            text-shadow: 0 0 5px #000;
+        }
+        form {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background: #007bfc;
+            color: #fff;
+            font-size: 1.2em;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background: #005bb5;
+        }
+    </style>
+</head>
+<body>
+    <form action="/register" method="POST">
+        <h1>Register at Kolega</h1>
+        <input type="text" name="username" placeholder="Username" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>
